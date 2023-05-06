@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/imghome"
+    android:orientation="vertical"
+    tools:context=".activities.FetchCompany">
+
+    <TextView
+        android:id="@+id/companies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="20"
+        android:text="@string/companies"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold|italic" />
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/search"
+        app:iconifiedByDefault="false"
+        app:searchHintIcon="@null"
+        app:queryHint="Search..."
+        android:focusable="false"
+        android:background="@drawable/lavender_border"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="475dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCompany"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="26dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/company_list_item" />
+
+            <TextView
+                android:id="@+id/tvLoadingData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/load"
+                android:textColor="@color/grey"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="82.8dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/jobimages" />
+
+        <ImageView
+
+            android:layout_width="82.8dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/events" />
+
+        <ImageView
+
+            android:layout_width="82.8dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageView
+
+            android:layout_width="82.8dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/companypng" />
+
+        <ImageView
+
+            android:layout_width="82.8dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/profile" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

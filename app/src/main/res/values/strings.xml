@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">JOB SCOPE</string>
+    <string name="add_company">. Add New Company .</string>
+    <string name="companies">. Companies .</string>
+    <string name="company_details">. Company Details .</string>
+    <string name="update_company_details">. Update Company Details .</string>
+    <string name="load">Loading Data…</string>
+    <string name="welcome_company">Welcome to the Company Insights…!</string>
+    <string name="addcompanybtn">Add new company</string>
+    <string name="fetchcompanybtn">Fetch companies</string>
+    <string name="savecompanybtn">Save</string>
+    <string name="updatecompanybtn">Update</string>
+    <string name="deletecompanybtn">Delete</string>
+    <string name="updatecompanydetailsbtn">Update Details</string>
+    <string name="name">Company name</string>
+    <string name="industry">Industry</string>
+    <string name="vacancy">Vacancies</string>
+    <string name="number">Contact no</string>
+    <string name="mail">E-mail</string>
+    <string name="address">Address</string>
+    <string name="link">Website link</string>
+    <string name="description">Company description</string>
+    <string name="company_name">Company name</string>
+    <string name="company_id">Company Id</string>
+</resources>
