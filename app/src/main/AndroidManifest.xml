@@ -12,6 +12,18 @@
         android:theme="@style/Theme.MyNew"
         tools:targetApi="31">
         <activity
+            android:name=".activities.DeleteJobTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UploadJobTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.JobTipsActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.CompanyDetails"
             android:exported="false" />
         <activity
