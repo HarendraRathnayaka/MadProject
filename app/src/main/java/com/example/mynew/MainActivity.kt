@@ -7,6 +7,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mynew.activities.CompanyPage
+import com.example.mynew.activities.JobTipsActivity
 
 class MainActivity : AppCompatActivity(), MyAdapter.MyClickListener {
 
@@ -59,7 +60,7 @@ class MainActivity : AppCompatActivity(), MyAdapter.MyClickListener {
             0 -> startActivity(Intent(this,Jobspage::class.java))
             1 -> startActivity(Intent(this,eventspage::class.java))
             2 -> startActivity(Intent(this, CompanyPage::class.java))
-            3 -> startActivity(Intent(this,myprofilepage::class.java))
+            3 -> startActivity(Intent(this,JobTipsActivity::class.java))
         }
     }
 }
