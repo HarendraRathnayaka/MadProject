@@ -7,6 +7,8 @@ import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mynew.activities.CompanyPage
+import com.example.mynew.activities.Jobspage
+import com.example.mynew.adapters.MyAdapter
 
 class MainActivity : AppCompatActivity(), MyAdapter.MyClickListener {
 
@@ -56,7 +58,7 @@ class MainActivity : AppCompatActivity(), MyAdapter.MyClickListener {
 
     override fun onClick(position: Int){
         when(position){
-            0 -> startActivity(Intent(this,Jobspage::class.java))
+            0 -> startActivity(Intent(this, Jobspage::class.java))
             1 -> startActivity(Intent(this,eventspage::class.java))
             2 -> startActivity(Intent(this, CompanyPage::class.java))
             3 -> startActivity(Intent(this,myprofilepage::class.java))

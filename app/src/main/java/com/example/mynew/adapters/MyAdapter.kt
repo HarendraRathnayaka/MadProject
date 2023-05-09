@@ -1,10 +1,12 @@
-package com.example.mynew
+package com.example.mynew.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mynew.R
+import com.example.mynew.Userdata
 import com.google.android.material.imageview.ShapeableImageView
 
 class MyAdapter(private var userList: List<Userdata>, private val listener: MyClickListener) :

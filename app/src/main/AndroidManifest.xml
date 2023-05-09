@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyNew"
         tools:targetApi="31">
+        <activity
+            android:name=".activities.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Jobspage"
+            android:exported="false" />
+        <activity
+            android:name=".activities.addjobs"
+            android:exported="false" />
         <activity
             android:name=".activities.CompanyDetails"
             android:exported="false" />
@@ -28,9 +43,6 @@
             android:exported="false" />
         <activity
             android:name=".eventspage"
-            android:exported="false" />
-        <activity
-            android:name=".Jobspage"
             android:exported="false" />
         <activity
             android:name=".SignupActivity"
