@@ -24,7 +24,7 @@
         android:id="@+id/detailImage"
         android:padding="8dp"
         android:layout_gravity="center"
-        android:src="@drawable/companypng"
+        android:src="@drawable/tips"
         android:scaleType="fitXY" />
 
     <TextView
