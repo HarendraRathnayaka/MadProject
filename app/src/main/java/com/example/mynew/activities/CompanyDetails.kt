@@ -25,6 +25,8 @@ class CompanyDetails : AppCompatActivity() {
     private lateinit var btnUpdate: Button
     private lateinit var btnDelete: Button
 
+    lateinit var bottombarList: Array<String>
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
